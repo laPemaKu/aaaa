@@ -11,6 +11,11 @@ namespace Vise_Formi
         private string ime, prezime, brojindeksa, smjer;
         DateTime datumRodjenja;
 
+        public Student()
+        {
+
+        }
+
         public Student(string ime, string prezime, string brojindeksa, string smjer, DateTime datumRodjenja)
         {
             this.ime = ime;

@@ -19,15 +19,25 @@ namespace Vise_Formi
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
-            // kreiranje nove forme tipa FormUnosNovogStudenta
+            FormUnosNovogStudenta frm = new FormUnosNovogStudenta();
 
-            FormUnosNovogStudenta frm = new
-            FormUnosNovogStudenta();
+            DialogResult rez = frm.ShowDialog();
+
             // unos novog studenta u listBox
 
-           if (frm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (rez == System.Windows.Forms.DialogResult.OK)
 
-                lbxStudenti.Items.Add("ass");
+                lbxStudenti.Items.Add(frm.Student1.ToString());
+        }
+
+        private void btnObrisiStudenta_Click(object sender, EventArgs e)
+        {
+            lbxStudenti.Items.RemoveAt(lbxStudenti.Items.Count -1);
+        }
+
+        private void btnObrisiSve_Click(object sender, EventArgs e)
+        {
+            lbxStudenti.Items.Clear();
         }
     }
 }

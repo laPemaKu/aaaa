@@ -60,6 +60,7 @@
             this.btnObrisiStudenta.TabIndex = 2;
             this.btnObrisiStudenta.Text = "Obrisi studenta";
             this.btnObrisiStudenta.UseVisualStyleBackColor = true;
+            this.btnObrisiStudenta.Click += new System.EventHandler(this.btnObrisiStudenta_Click);
             // 
             // btnObrisiSve
             // 
@@ -69,6 +70,7 @@
             this.btnObrisiSve.TabIndex = 3;
             this.btnObrisiSve.Text = "Obrisi sve studente";
             this.btnObrisiSve.UseVisualStyleBackColor = true;
+            this.btnObrisiSve.Click += new System.EventHandler(this.btnObrisiSve_Click);
             // 
             // FormStudenti
             // 
